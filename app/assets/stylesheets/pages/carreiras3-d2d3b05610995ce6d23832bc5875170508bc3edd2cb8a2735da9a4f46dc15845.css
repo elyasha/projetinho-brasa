@@ -1,0 +1,1607 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic,400italic,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+/* line 5, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+ul.visibility {
+    display: none;
+}
+
+/*
+ * Fonts
+ */
+/* line 15, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/constants.scss.erb */
+.scaled-font, .brasa-font, .product-font {
+    transform: scale(0.95, 1);
+    /* W3C */
+    -webkit-transform: scale(0.95, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(0.95, 1);
+    /* Firefox */
+    -ms-transform: scale(0.95, 1);
+    /* IE 9 */
+    -o-transform: scale(0.95, 1);
+    /* Opera */
+}
+
+/*
+ * Padrão de font para BRASA + Nome do produto. Exemplo, página do carreiras.
+ */
+/* line 29, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/constants.scss.erb */
+.brasa-font {
+    font-family: "Lato";
+    font-weight: 700;
+}
+
+/* line 35, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/constants.scss.erb */
+.product-font {
+    font-family: "Lato";
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*
+ * Colors
+ */
+/*
+ * Sizes
+ */
+/*font: [font-stretch] [font-style] [font-variant] [font-weight] [font-size]/[line-height] [font-family];*/
+/* Slider */
+/* line 2, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slider {
+    position: relative;
+    display: block;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* line 23, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* line 33, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-list:focus {
+    outline: none;
+}
+
+/* line 37, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+/* line 43, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+/* line 53, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+/* line 61, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-track:before,
+.slick-track:after {
+    display: table;
+    content: '';
+}
+
+/* line 68, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-track:after {
+    clear: both;
+}
+
+/* line 72, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+/* line 77, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slide {
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+
+/* line 85, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+/* line 89, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slide img {
+    display: block;
+}
+
+/* line 93, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+/* line 97, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+
+/* line 101, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+/* line 105, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+/* line 109, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+/* line 117, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick.css */
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Slider */
+/* line 3, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-loading .slick-list {
+    background: #fff url(/assets/slick/ajax-loader-e7b44c86b050fca766a96ddac2d0932af0126da6f2305280342d909168dcce6b.gif) center center no-repeat;
+}
+
+/* Icons */
+@font-face {
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url(/assets/slick-06d80cf01250132fd1068701108453feee68854b750d22c344ffc0de395e1dcb.eot);
+    src: url(/assets/slick-06d80cf01250132fd1068701108453feee68854b750d22c344ffc0de395e1dcb.eot?#iefix) format("embedded-opentype"), url(/assets/slick-26726bac4060abb1226e6ceebc1336e84930fe7a7af1b3895a109d067f5b5dcc.woff) format("woff"), url(/assets/slick-37bc99cfdbbc046193a26396787374d00e7b10d3a758a36045c07bd8886360d2.ttf) format("truetype"), url(/assets/slick-8ca11b5fcbff92ee6378017cf6832dddfa745253202d7c8d01f42d5d17c4cb5c.svg#slick) format("svg");
+}
+/* Arrows */
+/* line 22, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+/* line 45, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+
+/* line 54, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+    opacity: 1;
+}
+
+/* line 61, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+    opacity: .25;
+}
+
+/* line 67, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:before,
+.slick-next:before {
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    opacity: .75;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 81, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev {
+    left: -25px;
+}
+
+/* line 85, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-prev {
+    right: -25px;
+    left: auto;
+}
+
+/* line 90, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-prev:before {
+    content: '←';
+}
+
+/* line 94, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-prev:before {
+    content: '→';
+}
+
+/* line 99, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-next {
+    right: -25px;
+}
+
+/* line 103, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-next {
+    right: auto;
+    left: -25px;
+}
+
+/* line 108, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-next:before {
+    content: '→';
+}
+
+/* line 112, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+[dir='rtl'] .slick-next:before {
+    content: '←';
+}
+
+/* Dots */
+/* line 118, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-slider {
+    margin-bottom: 30px;
+}
+
+/* line 123, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+/* line 137, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* line 150, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+
+/* line 168, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+    outline: none;
+}
+
+/* line 173, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+    opacity: 1;
+}
+
+/* line 178, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li button:before {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 200, /Users/luccabazzo/.rvm/gems/ruby-2.3.1/gems/jquery-slick-rails-1.6.0.2/app/assets/stylesheets/slick-theme.css.erb */
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: black;
+}
+
+/* line 17, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+h1, h2, h3, h4 {
+    font-family: "Lato";
+}
+
+/* line 21, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+p {
+    font-family: "Merriweather", "Georgia", "Times New Roman";
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 3000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-webkit-keyframes dash {
+    from {
+        stroke-dashoffset: 3000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-moz-keyframes dash {
+    from {
+        stroke-dashoffset: 3000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@-o-keyframes dash {
+    from {
+        stroke-dashoffset: 3000;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+/* line 61, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.brasa-menu ul.language {
+    display: none;
+}
+
+/* line 67, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.banner {
+    max-width: 1100px;
+    max-height: 300px;
+    overflow: hidden;
+    margin: 2rem auto;
+}
+
+/* line 75, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+#centralizing_past_companies {
+    display: flex;
+    align-items: center;
+}
+
+/* line 80, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras {
+    max-height: 80vh;
+    background: url("https://d1ep31o42b6tif.cloudfront.net/carreiras/carreiras_back.jpg");
+    background-color: #F7F7F7;
+    /*background-color: rgba(3, 138, 209, 0.52);*/
+    background-size: cover;
+    background-position: center right;
+    background-repeat: no-repeat;
+    padding-bottom: 0%;
+}
+/* line 90, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras header {
+    padding: 3rem 0;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+/* line 94, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras header .top-section-logo {
+    position: relative;
+    margin: 10vh auto 0;
+}
+/* line 97, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras header .top-section-logo img {
+    max-height: 6rem;
+    display: block;
+    margin: 0 auto;
+}
+/* line 102, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras header .top-section-logo span {
+    display: inline-block;
+    transform: scale(0.95, 1);
+    /* W3C */
+    -webkit-transform: scale(0.95, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(0.95, 1);
+    /* Firefox */
+    -ms-transform: scale(0.95, 1);
+    /* IE 9 */
+    -o-transform: scale(0.95, 1);
+    /* Opera */
+}
+/* line 110, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras header .top-section-logo span.brasa-font {
+    font-size: 8rem;
+    position: relative;
+    top: -1rem;
+    color: #fafafa;
+}
+/* line 116, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras header .top-section-logo span.carreiras-font {
+    position: relative;
+    top: -3rem;
+    left: 0rem;
+    font-family: lato;
+    font-style: italic;
+    font-size: 4rem;
+    display: block;
+    color: #fafafa;
+    width: 50%;
+    margin: 0 auto;
+}
+/* line 129, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras header .top-section-logo p.carreiras_description {
+    font: expanded normal 200 1.5rem/2em "Merriweather", "Georgia", "Times New Roman";
+    margin-top: -10rem;
+    color: white;
+    width: 80%;
+    font-size: 1.9rem;
+    margin-right: auto;
+    margin-left: 8px;
+    margin-bottom: 10rem;
+}
+/* line 143, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras div.row {
+    max-width: 96rem;
+}
+/* line 146, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras div.row div.columns svg {
+    width: 100%;
+}
+/* line 149, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras div.row div.columns p {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: "Lato";
+    text-align: justify;
+    margin: 0 1rem;
+}
+/* line 158, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras span {
+    transform: scale(0.95, 1);
+    /* W3C */
+    -webkit-transform: scale(0.95, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(0.95, 1);
+    /* Firefox */
+    -ms-transform: scale(0.95, 1);
+    /* IE 9 */
+    -o-transform: scale(0.95, 1);
+    /* Opera */
+}
+/* line 165, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras span.brasa-font {
+    font-size: 5.3rem;
+    position: relative;
+    top: 2rem;
+    color: white;
+}
+/* line 171, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#main-carreiras span.product-font {
+    font-size: 5rem;
+    position: relative;
+    top: 2rem;
+    color: white;
+    font-weight: 300;
+}
+
+/* line 179, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list {
+    width: 100%;
+    height: 100%;
+    padding-top: 1rem;
+    background-color: #F7F7F7;
+}
+/* line 184, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list img.job_list_section_logo_carreiras {
+    max-height: 15rem;
+}
+@media screen and (min-width: 37em) {
+    /* line 184, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#jobs-list img.job_list_section_logo_carreiras {
+        max-height: 18rem;
+    }
+}
+/* line 190, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list span {
+    transform: scale(0.95, 1);
+    /* W3C */
+    -webkit-transform: scale(0.95, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(0.95, 1);
+    /* Firefox */
+    -ms-transform: scale(0.95, 1);
+    /* IE 9 */
+    -o-transform: scale(0.95, 1);
+    /* Opera */
+}
+/* line 197, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list span.brasa-font {
+    font-size: 5.3rem;
+    position: relative;
+    top: 2rem;
+    color: #FFB84D;
+}
+/* line 205, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list span.product-font {
+    font-size: 5rem;
+    position: relative;
+    top: 2rem;
+    color: #FFB84D;
+}
+/* line 211, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article {
+    max-width: 96rem;
+}
+/* line 213, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article h3 {
+    margin: 1rem;
+    font-size: 3.9rem;
+    font-family: "Lato";
+    color: #E8782D;
+}
+/* line 219, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article div.box {
+    background-color: white;
+    border-radius: 12px;
+    -webkit-box-shadow: 3px 10px 30px 5px rgba(153, 153, 153, 0.49);
+    -moz-box-shadow: 3px 10px 30px 5px rgba(153, 153, 153, 0.49);
+    box-shadow: 3px 10px 30px 5px rgba(153, 153, 153, 0.49);
+    height: 100%;
+    padding: 20px 0px 10px 0;
+    margin-bottom: 50px;
+}
+/* line 229, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article .button {
+    background-color: #7AB242;
+    color: white;
+    border-radius: 6px;
+}
+/* line 234, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article p.vagas_alert {
+    font: expanded normal 200 1.5rem/2em "Merriweather", "Georgia", "Times New Roman";
+    text-align: center;
+    font-size: 1.9rem;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -5rem;
+    margin-bottom: 10rem;
+}
+/* line 244, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article div.div-stroke {
+    background-color: #EE8E3A;
+    border-style: solid;
+    border: 0.5px;
+    height: 0.3rem;
+    width: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* line 253, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article div.div-stroke2 {
+    margin-top: 3rem;
+    margin-bottom: 9rem;
+    background-color: #EE8E3A;
+    border-style: solid;
+    border: 0.5px;
+    height: 0.3rem;
+    width: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* line 264, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article span.tipo-vaga {
+    font-family: "Lato";
+    font-size: 2rem;
+    position: relative;
+    top: 0.2rem;
+    color: #615357;
+}
+/* line 271, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article ul {
+    margin-left: 2rem;
+}
+/* line 273, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article ul li {
+    font-family: "Merriweather", "Georgia", "Times New Roman";
+    list-style: decimal;
+}
+/* line 276, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article ul li span {
+    font-weight: bold;
+}
+/* line 281, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article img {
+    margin: 30px auto;
+    display: block;
+    height: 80px;
+}
+/* line 286, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article p {
+    margin: 0;
+    font: expanded normal 200 1.5rem/2em "Merriweather", "Georgia", "Times New Roman";
+}
+/* line 290, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article a {
+    font-family: "Lato";
+    font-size: 2rem;
+    display: block;
+    transition: 1s;
+}
+/* line 297, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article a:hover {
+    background-color: transparent;
+    color: #615357;
+}
+/* line 301, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article .vaga-anterior-image:hover {
+    transition: 1s;
+    -ms-transform: scale(1.05, 1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05, 1.05);
+    /* Safari */
+    transform: scale(1.05, 1.05);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    -webkit-filter: grayscale(0%);
+    /* FF 35+ */
+    filter: grayscale(0%);
+}
+/* line 313, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article .vaga-anterior-image {
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    -webkit-filter: grayscale(100%);
+    /* FF 35+ */
+    filter: grayscale(100%);
+}
+/* line 319, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list article .vaga-image:hover {
+    transition: 1s;
+    -ms-transform: scale(1.05, 1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05, 1.05);
+    /* Safari */
+    transform: scale(1.05, 1.05);
+}
+/* line 328, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row {
+    max-width: 90rem;
+    margin: 0%;
+}
+/* line 331, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .closed {
+    opacity: 0.5;
+}
+/* line 333, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .closed a {
+    display: none;
+}
+/* line 337, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .closed:after {
+    content: "Inscricoes encerradas";
+    font-size: 3.5rem;
+    color: #f6921c;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 10rem;
+}
+/* line 347, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .columns h5.vaga-deadline {
+    font-family: "Lato";
+    text-align: center;
+    font-size: 1.5rem;
+    font-width: 400;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    font-style: none;
+    color: #615357;
+}
+/* line 357, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .columns p.vaga-short-description {
+    text-align: justify;
+    font: expanded normal 200 1.0rem/1.5em "Merriweather", "Georgia", "Times New Roman";
+    width: 95%;
+}
+/* line 362, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .columns a.vaga-title {
+    padding-bottom: 15px;
+    font-weight: 500;
+    font-family: "Lato";
+    font-size: 1.8rem !important;
+    font-style: normal;
+    color: black;
+}
+/* line 370, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .columns a:hover.vaga-title {
+    color: #E8782D;
+}
+/* line 373, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .columns p.vaga-title {
+    margin-top: 2rem;
+    font-family: "Lato";
+    font-size: 2.5rem !important;
+    font-style: normal;
+    color: black;
+    margin-bottom: 8rem;
+}
+/* line 381, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#jobs-list .row .columns p:hover.vaga-title {
+    color: #E8782D;
+}
+
+/* line 388, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 4rem;
+}
+/* line 393, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs img.job_list_section_logo_carreiras {
+    max-height: 15rem;
+}
+@media screen and (min-width: 37em) {
+    /* line 393, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#previous-jobs img.job_list_section_logo_carreiras {
+        max-height: 18rem;
+    }
+}
+/* line 399, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs span {
+    transform: scale(0.95, 1);
+    /* W3C */
+    -webkit-transform: scale(0.95, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(0.95, 1);
+    /* Firefox */
+    -ms-transform: scale(0.95, 1);
+    /* IE 9 */
+    -o-transform: scale(0.95, 1);
+    /* Opera */
+}
+/* line 406, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs span.brasa-font {
+    font-size: 5.3rem;
+    position: relative;
+    top: 2rem;
+    color: #FFB84D;
+}
+/* line 414, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs span.product-font {
+    font-size: 5rem;
+    position: relative;
+    top: 2rem;
+    color: #FFB84D;
+}
+/* line 423, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article {
+    margin: 0 auto;
+    max-width: 96rem;
+}
+/* line 426, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article h3 {
+    margin: 1rem;
+    font-size: 3.9rem;
+    font-family: "Lato";
+    color: #E8782D;
+}
+/* line 432, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article p.vagas_alert {
+    font: expanded normal 200 1.5rem/2em "Merriweather", "Georgia", "Times New Roman";
+    text-align: center;
+    font-size: 1.9rem;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -5rem;
+    margin-bottom: 10rem;
+}
+/* line 442, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article span.tipo-vaga {
+    font-family: "Lato";
+    font-size: 2rem;
+    position: relative;
+    top: 0.2rem;
+    color: #615357;
+}
+/* line 449, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article ul {
+    margin-left: 2rem;
+}
+/* line 451, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article ul li {
+    font-family: "Merriweather", "Georgia", "Times New Roman";
+    list-style: decimal;
+}
+/* line 454, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article ul li span {
+    font-weight: bold;
+}
+/* line 459, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article img {
+    margin: 0 auto;
+    display: block;
+    padding: 20px 0px 50px 0px;
+}
+/* line 464, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article p {
+    margin: 0;
+    font: expanded normal 200 1.5rem/2em "Merriweather", "Georgia", "Times New Roman";
+}
+/* line 468, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article a {
+    font-family: "Lato";
+    font-size: 2rem;
+    display: block;
+    text-align: center;
+    transition: 1s;
+}
+/* line 476, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article a:hover {
+    background-color: transparent;
+    color: #615357;
+}
+/* line 480, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article .vaga-anterior-image:hover {
+    transition: 1s;
+    -ms-transform: scale(1.05, 1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05, 1.05);
+    /* Safari */
+    transform: scale(1.05, 1.05);
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    -webkit-filter: grayscale(0%);
+    /* FF 35+ */
+    filter: grayscale(0%);
+}
+/* line 492, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article .vaga-anterior-image {
+    /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    -webkit-filter: grayscale(100%);
+    /* FF 35+ */
+    filter: grayscale(100%);
+}
+/* line 498, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs article .vaga-image:hover {
+    transition: 1s;
+    -ms-transform: scale(1.05, 1.05);
+    /* IE 9 */
+    -webkit-transform: scale(1.05, 1.05);
+    /* Safari */
+    transform: scale(1.05, 1.05);
+}
+/* line 507, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row {
+    margin: 0%;
+}
+/* line 509, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .closed {
+    opacity: 0.5;
+}
+/* line 511, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .closed a {
+    display: none;
+}
+/* line 515, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .closed:after {
+    content: "Inscricoes encerradas";
+    font-size: 3.5rem;
+    color: #f6921c;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    top: 10rem;
+}
+/* line 525, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .columns h5.vaga-deadline {
+    font-family: "Lato";
+    text-align: center;
+    font-size: 1.5rem;
+    font-width: 400;
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+    font-style: none;
+    color: #615357;
+}
+/* line 535, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .columns p.vaga-short-description {
+    text-align: justify;
+    font: expanded normal 200 1.5rem/2em "Merriweather", "Georgia", "Times New Roman";
+    font-size: 1.8rem;
+    width: 80%;
+    margin-bottom: 8rem;
+}
+/* line 542, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .columns a.vaga-title {
+    margin-top: 2rem;
+    text-align: center !important;
+    font-family: "Lato";
+    font-size: 2.5rem !important;
+    font-style: normal;
+    color: black;
+}
+/* line 550, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .columns a:hover.vaga-title {
+    color: #E8782D;
+}
+/* line 553, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .columns p.vaga-title {
+    margin-top: 2rem;
+    text-align: center !important;
+    font-family: "Lato";
+    font-size: 2.5rem !important;
+    font-style: normal;
+    color: black;
+    margin-bottom: 8rem;
+}
+/* line 562, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#previous-jobs .row .columns p:hover.vaga-title {
+    color: #E8782D;
+}
+
+/* line 569, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#contato {
+    margin-bottom: 0;
+    height: 100%;
+    padding-bottom: 5%;
+    /*background: url("https://d1ep31o42b6tif.cloudfront.net" + '/carreiras/carreiras_contato.jpg');*/
+    background-color: #038AD1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+/* line 579, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#contato .row {
+    width: 70%;
+}
+/* line 583, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#contato h3.contato {
+    color: white;
+    font-family: "Lato";
+    font-size: 3rem;
+    margin-top: 9.5rem;
+}
+/* line 589, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#contato h2.contato_item1 {
+    margin-top: 20px;
+    color: white;
+    font-family: "Lato";
+    font-size: 2rem;
+}
+/* line 595, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#contato h3.contato_item2 {
+    color: #038AD1;
+    font-family: "Lato";
+    background-color: white;
+    font-size: 1.4rem;
+    border: 2px solid white;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 3rem;
+    width: 150px;
+    padding: 1rem;
+    transition: 1s;
+}
+/* line 607, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#contato h3.contato_item2:hover {
+    background-color: white;
+    color: #E69C2E;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+/* line 615, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#contato div.div-stroke3 {
+    background-color: white;
+    border-style: solid;
+    border: 0.5px;
+    height: 0.3rem;
+    width: 25rem;
+    margin-bottom: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* line 626, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#aplicar-carreiras {
+    width: 100%;
+    background-color: #ec8a30;
+    height: 11rem;
+}
+/* line 630, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#aplicar-carreiras header {
+    margin: 0 auto;
+}
+/* line 632, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#aplicar-carreiras header .top-section-logo {
+    position: relative;
+    text-align: left;
+}
+/* line 635, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#aplicar-carreiras header .top-section-logo img {
+    max-width: 5rem;
+    margin-left: 10rem;
+    margin-top: 2rem;
+}
+/* line 640, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#aplicar-carreiras header .top-section-logo span {
+    display: inline-block;
+    transform: scale(0.95, 1);
+    /* W3C */
+    -webkit-transform: scale(0.95, 1);
+    /* Safari and Chrome */
+    -moz-transform: scale(0.95, 1);
+    /* Firefox */
+    -ms-transform: scale(0.95, 1);
+    /* IE 9 */
+    -o-transform: scale(0.95, 1);
+    /* Opera */
+}
+/* line 648, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#aplicar-carreiras header .top-section-logo span.product-font {
+    font-size: 4rem;
+    position: relative;
+    color: #fafafa;
+    top: -0.5rem;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* line 659, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description {
+    width: 100%;
+    margin-top: 13rem;
+}
+/* line 663, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article div.div-stroke {
+    background-color: #EE8E3A;
+    border-style: solid;
+    border: 0.5px;
+    height: 0.3rem;
+    width: 25rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3rem;
+}
+/* line 673, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article div.logo {
+    margin: 20px auto;
+}
+/* line 677, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article img {
+    max-width: 16rem;
+}
+/* line 681, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article h3.vaga-title {
+    margin-top: 2rem;
+    font-size: 3.7rem;
+    text-align: center;
+    font-family: "Lato";
+    color: #E8782D;
+}
+/* line 688, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article h5.vaga-deadline {
+    text-align: center;
+    font-family: "Lato";
+    font-size: 1.7rem;
+    color: #615357;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+/* line 696, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article h5.vaga-descricao {
+    font-family: "Lato";
+    font-size: 2.7rem;
+    color: #615357;
+    margin-bottom: 3rem;
+    margin-left: 5.5rem;
+    margin-top: 8rem;
+}
+/* line 705, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article p.vaga-full-description {
+    text-align: justify !important;
+    text-indent: 50px;
+    font-size: 2.1rem;
+    font: expanded normal 200 1.5rem/2em "Merriweather", "Georgia", "Times New Roman";
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+    text-indent: 0px;
+}
+/* line 714, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article input[type=button].vaga-aplicar {
+    text-align: center;
+    font-size: 2.6rem;
+    font-family: "Lato";
+    color: white;
+    background-color: #7AB242;
+    border: 4px solid #7AB242;
+    border-radius: 15px;
+    width: 240px;
+    height: 55px;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    transition: 1s;
+}
+/* line 728, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article input[type=button].vaga-aplicar:hover {
+    background-color: white;
+    color: #E69C2E;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+/* line 734, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article .aplicar-link-externo {
+    background-color: #E69C2E;
+    border: 4px solid #E69C2E;
+    border-radius: 15px;
+    width: 180px !important;
+    height: 70px !important;
+    line-height: 60px;
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    transition: 1s;
+}
+/* line 745, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article .aplicar-link-externo a {
+    text-align: center !important;
+    font-size: 3rem !important;
+    font-family: "Lato";
+    margin-bottom: 10rem;
+    margin-top: 3rem;
+    transition: 1s;
+    width: 10rem !important;
+    white-space: nowrap !important;
+    color: black;
+}
+/* line 756, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article .aplicar-link-externo:hover {
+    background-color: white;
+    color: #E69C2E;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+/* line 762, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article .aplicar-link-externo a:hover {
+    background-color: none;
+    color: #E69C2E;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+/* line 768, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article .wrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+}
+/* line 772, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#job-description article h5.warning {
+    font-family: "Lato";
+    font-size: 2rem;
+    color: red;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 3rem;
+}
+
+/* line 786, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+section#form-carreiras .form-aplicar {
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+/* line 792, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.all-form-carreiras {
+    height: 100%;
+    margin-left: 25rem;
+    margin-bottom: 10rem;
+}
+
+/* line 797, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-inputs.string {
+    font-family: "Lato" !important;
+    font-size: 14px !important;
+    height: 30px !important;
+    border-radius: 7px !important;
+    margin-bottom: 20px;
+}
+
+/* line 804, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-inputs.string.email {
+    font-family: "Lato" !important;
+    font-size: 14px !important;
+    height: 30px !important;
+    border-radius: 7px !important;
+    margin-bottom: 20px;
+}
+
+/* line 811, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-inputs.numeric.integer {
+    font-family: "Lato" !important;
+    font-size: 14px !important;
+    height: 30px !important;
+    border-radius: 7px !important;
+    margin-bottom: 20px;
+}
+
+/* line 818, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-inputs-button {
+    font-family: "Lato" !important;
+    font-size: 20px !important;
+    background-color: #E69C2E !important;
+    color: black !important;
+    width: 30%;
+    border-radius: 7px !important;
+}
+
+/* line 826, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-submit-button {
+    margin-left: 15rem;
+}
+
+/* line 829, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.wrapper {
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+/* line 834, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.vaga-video {
+    display: inline-block;
+    width: 640px;
+    height: 360px;
+}
+
+/* line 842, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.checkbox-wrapper {
+    display: flex;
+    margin: 1rem;
+    padding-top: 2rem;
+    justify-content: center;
+}
+
+/* line 850, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.checkbox-center {
+    display: inline;
+    width: 100%;
+}
+
+/* line 857, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-buttons a.edit-button {
+    text-align: center;
+    font-size: 2.5rem !important;
+    font-family: "Lato";
+    color: white !important;
+    background-color: #E69C2E;
+    border: 4px solid #E69C2E;
+    border-radius: 15px !important;
+    width: 270px !important;
+    height: 70px !important;
+    line-height: 40px;
+    margin-bottom: 10rem;
+    margin-top: 3rem !important;
+    transition: 1s;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+/* line 877, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-buttons a.edit-button:hover {
+    background-color: white;
+    color: #E69C2E !important;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+/* line 884, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-buttons .send-button {
+    text-align: center;
+    font-size: 2.5rem !important;
+    font-family: "Lato";
+    color: white;
+    background-color: #E69C2E;
+    border: 4px solid #E69C2E;
+    border-radius: 15px !important;
+    width: 197px;
+    height: 55px;
+    line-height: 27px;
+    margin-bottom: 10rem;
+    margin-top: -0.75rem !important;
+    transition: 1s;
+}
+/* line 900, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.form-buttons .send-button:hover {
+    background-color: white;
+    color: #E69C2E;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+
+/* line 908, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+a.edit-button {
+    text-align: center;
+    font-size: 2.5rem !important;
+    font-family: "Lato";
+    color: white !important;
+    background-color: #E69C2E;
+    border: 4px solid #E69C2E;
+    border-radius: 15px !important;
+    width: 270px !important;
+    height: 70px !important;
+    line-height: 40px;
+    margin-bottom: 10rem;
+    margin-top: 3rem !important;
+    transition: 1s;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* line 928, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+a.edit-button:hover {
+    background-color: white;
+    color: #E69C2E !important;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+
+/* line 935, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.send-button {
+    text-align: center;
+    font-size: 2.5rem !important;
+    font-family: "Lato";
+    color: white;
+    background-color: #E69C2E;
+    border: 4px solid #E69C2E;
+    border-radius: 15px !important;
+    width: 197px;
+    height: 55px;
+    line-height: 27px;
+    margin-bottom: 10rem;
+    margin-top: 2rem !important;
+    transition: 1s;
+}
+
+/* line 951, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.send-button:hover {
+    background-color: white;
+    color: #E69C2E;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+
+/* line 960, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.user-info {
+    font-family: "Lato";
+    font-size: 2rem !important;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+/* line 969, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.user-info-bold {
+    font-family: "Lato";
+    font-size: 2rem !important;
+    max-width: 96rem;
+    margin: 0 auto;
+}
+
+/* line 976, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.login-button {
+    text-align: center;
+    font-size: 2.5rem !important;
+    font-family: "Lato";
+    color: white !important;
+    background-color: #E69C2E;
+    border: 4px solid #E69C2E;
+    border-radius: 15px !important;
+    width: 270px !important;
+    height: 70px !important;
+    line-height: 40px;
+    margin-bottom: 10rem;
+    margin-top: 3rem !important;
+    transition: 1s;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* line 996, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+.login-button:hover {
+    background-color: white;
+    color: #E69C2E !important;
+    border-color: #E69C2E;
+    transition: 1s;
+}
+
+@media screen and (min-width: 23em) and (max-width: 55em) {
+    /* line 1006, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras {
+        max-height: 120vh;
+        padding-bottom: 12%;
+    }
+    /* line 1011, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo img {
+        display: inline;
+        max-height: 13rem;
+    }
+    /* line 1015, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo span.brasa-font {
+        font-size: 9rem;
+        top: -4rem;
+    }
+    /* line 1019, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo p.carreiras_description {
+        margin: 0 auto;
+        margin-top: 1%;
+    }
+    /* line 1023, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo span.carreiras-font {
+        top: -6rem;
+        font-size: 4rem;
+        display: block;
+    }
+    /* line 1039, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras div.row div.columns svg {
+        width: 100%;
+        float: right;
+        position: absolute;
+        top: 1%;
+        right: -25%;
+    }
+    /* line 1046, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras div.row div.columns p {
+        font-size: 2rem;
+        font-weight: 100;
+        width: 70%;
+        margin: 0 1rem;
+    }
+
+    /* line 1057, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#jobs-list article {
+        margin: 2% auto;
+    }
+    /* line 1062, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#jobs-list .row .columns h5, section#jobs-list .row .columns h4 {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 55em) {
+    /* line 1074, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras {
+        padding-bottom: 12%;
+    }
+    /* line 1077, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo {
+        margin-top: 28vh;
+    }
+    /* line 1080, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo img {
+        display: inline;
+        max-height: 15rem;
+    }
+    /* line 1084, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo span.brasa-font {
+        font-size: 7rem;
+        top: -5rem;
+    }
+    /* line 1088, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo span.carreiras-font {
+        top: -12.6rem;
+        font-size: 6rem;
+        display: block;
+    }
+    /* line 1098, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras div.row div.columns svg {
+        width: 100%;
+        float: right;
+        position: absolute;
+        top: 10%;
+        right: -12%;
+    }
+    /* line 1105, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras div.row div.columns p {
+        font-size: 2rem;
+        font-weight: 100;
+        width: 60%;
+        margin: 0 5rem;
+    }
+
+    /* line 1116, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#jobs-list article {
+        margin: 2% auto;
+    }
+    /* line 1121, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#jobs-list .row .columns h5, section#jobs-list .row .columns h4 {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 1em) and (max-width: 22em) {
+    /* line 1130, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras {
+        max-height: 180vh;
+        padding-bottom: 12%;
+    }
+    /* line 1135, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo img {
+        display: inline;
+        max-height: 13rem;
+    }
+    /* line 1139, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo span.brasa-font {
+        font-size: 9rem;
+        top: -4rem;
+    }
+    /* line 1143, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo p.carreiras_description {
+        margin: 0 auto;
+        margin-top: 1%;
+    }
+    /* line 1147, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    section#main-carreiras header .top-section-logo span.carreiras-font {
+        top: -6rem;
+        font-size: 4rem;
+        display: block;
+    }
+}
+@media screen and (max-width: 640px) {
+    /* line 1160, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
+    .vaga-video {
+        width: 90vw;
+        height: calc(0.5625*(90vw));
+    }
+}
