@@ -1,11 +1,589 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"a379048f8a","applicationID":"355731066","transactionName":"JVdbF0ENVQkDQE0VVgFdRkxQA0sXA1sQBERVF1wNVwdB","queueTime":6,"applicationTime":57,"agent":""}</script>
+  <script>(window.NREUM||(NREUM={})).loader_config={licenseKey:"a379048f8a",applicationID:"355731066"};window.NREUM||(NREUM={}),__nr_require=function(n,e,t){function r(t){if(!e[t]){var i=e[t]={exports:{}};n[t][0].call(i.exports,function(e){var i=n[t][1][e];return r(i||e)},i,i.exports)}return e[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(n,e,t){function r(){}function i(n,e,t){return function(){return o(n,[u.now()].concat(f(arguments)),e?null:this,t),e?void 0:this}}var o=n("handle"),a=n(4),f=n(5),c=n("ee").get("tracer"),u=n("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(n,e){s[e]=i(d+e,!0,"api")}),s.addPageAction=i(d+"addPageAction",!0),s.setCurrentRouteName=i(d+"routeName",!0),e.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(n,e){var t={},r=this,i="function"==typeof e;return o(l+"tracer",[u.now(),n,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return e.apply(this,arguments)}catch(n){throw c.emit("fn-err",[arguments,this,n],t),n}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(n,e){m[e]=i(l+e)}),newrelic.noticeError=function(n,e){"string"==typeof n&&(n=new Error(n)),o("err",[n,u.now(),!1,e])}},{}],2:[function(n,e,t){function r(n,e){var t=n.getEntries();t.forEach(function(n){"first-paint"===n.name?a("timing",["fp",Math.floor(n.startTime)]):"first-contentful-paint"===n.name&&a("timing",["fcp",Math.floor(n.startTime)])})}function i(n){if(n instanceof c&&!s){var e,t=Math.round(n.timeStamp);e=t>1e12?Date.now()-t:f.now()-t,s=!0,a("timing",["fi",t,{type:n.type,fid:e}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var o,a=n("handle"),f=n("loader"),c=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){o=new PerformanceObserver(r);try{o.observe({entryTypes:["paint"]})}catch(u){}}if("addEventListener"in document){var s=!1,p=["click","keydown","mousedown","pointerdown","touchstart"];p.forEach(function(n){document.addEventListener(n,i,!1)})}}},{}],3:[function(n,e,t){function r(n,e){if(!i)return!1;if(n!==i)return!1;if(!e)return!0;if(!o)return!1;for(var t=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],4:[function(n,e,t){function r(n,e){var t=[],r="",o=0;for(r in n)i.call(n,r)&&(t[o]=e(r,n[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],5:[function(n,e,t){function r(n,e,t){e||(e=0),"undefined"==typeof t&&(t=n?n.length:0);for(var r=-1,i=t-e||0,o=Array(i<0?0:i);++r<i;)o[r]=n[e+r];return o}e.exports=r},{}],6:[function(n,e,t){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(n,e,t){function r(){}function i(n){function e(n){return n&&n instanceof r?n:n?c(n,f,o):o()}function t(t,r,i,o){if(!d.aborted||o){n&&n(t,r,i);for(var a=e(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(n,e){h[n]=v(n).concat(e)}function m(n,e){var t=h[n];if(t)for(var r=0;r<t.length;r++)t[r]===e&&t.splice(r,1)}function v(n){return h[n]||[]}function g(n){return p[n]=p[n]||i(t)}function w(n,e){u(n,function(n,t){e=e||"feature",y[t]=e,e in s||(s[e]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:e,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var f="nr@context",c=n("gos"),u=n(4),s={},p={},d=e.exports=i();d.backlog=s},{}],gos:[function(n,e,t){function r(n,e,t){if(i.call(n,e))return n[e];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(n,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return n[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(n,e,t){function r(n,e,t,r){i.buffer([n],r),i.emit(n,e,t)}var i=n("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(n,e,t){function r(n){var e=typeof n;return!n||"object"!==e&&"function"!==e?-1:n===window?0:a(n,o,function(){return i++})}var i=1,o="nr@id",a=n("gos");e.exports=r},{}],loader:[function(n,e,t){function r(){if(!x++){var n=E.info=NREUM.info,e=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(n&&n.licenseKey&&n.applicationID&&e))return s.abort();u(y,function(e,t){n[e]||(n[e]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=l.createElement("script");t.src="https://"+n.agent,e.parentNode.insertBefore(t,e)}}function i(){"complete"===l.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=n("handle"),u=n(4),s=n("ee"),p=n(3),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1158.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=e.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};n(1),n(2),l[m]?(l[m]("DOMContentLoaded",o,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",i),d[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=n(6)},{}],"wrap-function":[function(n,e,t){function r(n){return!(n&&n instanceof Function&&n.apply&&!n[a])}var i=n("ee"),o=n(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;e.exports=function(n,e){function t(n,e,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){d([u,"",[r,a,i],f])}s(e+"start",[r,a,i],f);try{return c=n.apply(a,r)}catch(p){throw s(e+"err",[r,a,p],f),p}finally{s(e+"end",[r,a,c],f)}}return r(n)?n:(e||(e=""),nrWrapper[a]=n,p(n,nrWrapper),nrWrapper)}function u(n,e,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<e.length;c++)f=e[c],a=n[f],r(a)||(n[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||e){var o=c;c=!0;try{n.emit(t,r,i,e)}catch(a){d([a,t,r,i])}c=o}}function p(n,e){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(n);return t.forEach(function(t){Object.defineProperty(e,t,{get:function(){return n[t]},set:function(e){return n[t]=e,e}})}),e}catch(r){d([r])}for(var i in n)f.call(n,i)&&(e[i]=n[i]);return e}function d(e){try{n.emit("internal-error",e)}catch(t){}}return n||(n=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>BRASA | Brazilian Student Association</title>
+  <meta name="title" content="BRASA - Brazilian Student Association">
+  <meta name="description" content="A Associação de Estudantes Brasileiros no Exterior é a maior organização de estudantes fora do país.">
+
+  <link rel="stylesheet" media="screen" href="/app/assets/stylesheets/scaffolds-70067fdbd9d8b080f103944d5603e5ecf67b9fb4dc59738157f3d6960e465922.css" />
+  <link rel="stylesheet" media="screen" href="/app/assets/stylesheets/shared-a3c800544e417f88fd74660e83d1e95ffabe3a545259afea0019bbd6c5a214cb.css" />
+
+  <script src="/app/assets/vendor/modernizr-74da3245def7569da28115667be6a85a2ad97464abe707c9829c46d8975597bc.js"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="DSRRCJpXDsXpUzKMzxLZ87z2VYMBdRVdxLyy81TKuWy45azVlBMvTflmu8JVRb8Fy31XetER8QhU8NCBQkCN0g==" />
+
+
 </head>
-<body>
-  <h1>Career#index</h1>
-  <p>Find me in app/views/career/index.html.erb</p>
+
+<body onload="onScrollInit( $('.os-animation') );tabsInit();">
+
+
+<script type="text/javascript" id="cookieinfo"
+        src="/app/assets/cookieinfoscript.com/js/cookieinfo.min.js">
+</script>
+
+<div class="off-canvas-wrap" data-no-turbolink data-offcanvas>
+  <div class="inner-wrap">
+    <div class="fixed brasa-menu">
+      <!-- <ul class="language">
+        <li id="portuguese"></li>
+        <li id="english"> </li>
+      </ul> -->
+
+      <ul class="menu-items ">
+        <li class="item-left li-logo-name">
+          <a class="left-off-canvas-toggle" href="#">
+            <span class="menu-sanduiche"></span>
+          </a>
+          <a href="/" id="link-homepage"><img src="https://d1ep31o42b6tif.cloudfront.net/home/BRASA_logo_horizontal.png" alt="Brasa logo horizontal" /></a>
+        </li>
+        <li class="item-left li-logo-only">
+          <a href="/" id="link-homepage"><img src="/app/assets/images/Logo.png" alt="Logo" /></a>
+        </li>
+        <li class="item-right" id="link-login"><a href="/database">LOGIN</a></li>
+
+
+        <li class="item-right"><a href="/institutional">SOBRE NÓS</a></li>
+        <li class="item-right"><a href="/clusters">JÁ ESTUDEI FORA</a></li>
+        <li class="item-right"><a href="/membership">ESTUDO FORA</a></li>
+        <li class="item-right"><a href="/pre_menu">QUERO ESTUDAR FORA</a></li>
+        <li class="item-right"><a href="https://forms.gle/f7C9E84b1e58XbWK8" target="_blank">JUNTE-SE A NÓS</a></li>
+        <li class="item-right"><a href="/carreiras">CARREIRAS</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- MENU LATERAL -->
+    <aside class="left-off-canvas-menu fixed">
+      <ul class="off-canvas-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/institutional">Institucional</a></li>
+        <li class="pillar"><span class="prospective">Pré-Universitário</span></li>
+        <ul class="products-menu">
+          <li><a href="/pre_menu">BRASA PRÉ</a></li>
+          <li><a href="http://www.brasinhas.org" target="_blank">Brasinhas</a></li>
+          <!-- <li><a href="/brasa_jr">BRASA Jr.</a></li> -->
+          <li><a href="/embaixadores">EMBAIXADORES</a></li>
+
+        </ul>
+        <li class="pillar"><span class="university">Universitário</span></li>
+        <ul class="products-menu">
+          <li><a href="/membership">Membership</a></li>
+          <li><a href="/conferencias">Conferências</a></li>
+          <li><a href="/carreiras">CARREIRAS</a></li>
+          <li><a href="/mentoria">Next</a></li>
+          <li><a href="http://impactus.gobrasa.org" target="_blank">IMPACTUS</a></li>
+        </ul>
+        <li class="pillar"><span class="alumni">Já Estudei Fora</span></li>
+        <ul class="products-menu">
+          <li><a href="/clusters">Clusters</a></li>
+          <li><a href="/networking_events">Networking Events</a></li>
+          <li><a href="/awards">Awards</a></li>
+          <li><a href="/grants">Grants</a></li>
+          <li><a href="/carreiras">CARREIRAS</a></li>
+        </ul>
+      </ul>
+    </aside>
+
+
+    <section id="main" class="main-section" style="overflow-y: overlay; height: 100%;">
+
+      <link rel="stylesheet" media="all" href="/app/assets/stylesheets/pages/carreiras3-d2d3b05610995ce6d23832bc5875170508bc3edd2cb8a2735da9a4f46dc15845.css" />
+
+      <section id="main-carreiras">
+        <header>
+          <div>
+
+
+            <div class="top-section-logo " >
+              <div class="row">
+                <div class="column small 12">
+                  <span class="brasa-font">BRASA</span><span class="carreiras-font">Carreiras</span>
+                </div>
+                <div class="column small 12">
+                  <p class="carreiras_description">O BRASA Carreiras tem o objetivo de conectar alunos que estudam fora a oportunidades profissionais no Brasil. Mantemos contato direto com várias empresas brasileiras e estrangeiras com interesse em contratar estudantes brasileiros no exterior com muita vontade de mudar o país.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </header>
+      </section>
+
+      <section id="jobs-list">
+        <article>
+          <h3>Vagas Disponíveis</h3>
+
+          <div class="checkbox-wrapper">
+
+            <div class="checkbox-div">
+              <input type="checkbox" id="summer-checkbox" name="summer" checked>
+              <label for="summer">Summer</label>
+            </div>
+
+            <div class="checkbox-div">
+              <input type="checkbox" id="fulltime-checkbox" name="full-time"
+                     checked>
+              <label for="full-time">Full-time</label>
+            </div>
+
+
+          </div>
+
+          <br/><br/>
+          <div class="row" style="max-width: none;">
+
+            <div class="row vaga-fulltime">
+
+              <div class= "column medium-12 small-12 ">
+                <div class = "box">
+                  <div class="row">
+                    <div class="large-2 medium-2 small-12 columns">
+                      <a class="vaga-image" data-turbolinks="false" href="/carreiras/aplicar/20"><img src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/020/original/logo-shadow-b0f4b448329262597cd7af3780c1b7003ff7bfd469ed8d8002b7f335fbfd9185.png?1485710064" alt="Logo shadow" /></a>
+                    </div>
+                    <div class="large-8 medium-8 small-12 columns">
+                      <a class="vaga-title" href="/carreiras/aplicar/20">Oportunidades Full-Time no Brasil</a>
+                      <p class="vaga-short-description">Algumas empresas parceiras da BRASA estão contratando! Se você estuda numa universidade no exterior e está se formando em 2019, nos envie seu currículo para ser considerado.</p>
+                    </div>
+                    <div class="large-2 medium-2 small-12 columns">
+                      <h5 class="vaga-deadline">Deadline: 01/01/2020</h5>
+                      <a class="button" data-turbolinks="false" href="/carreiras/aplicar/20">Aplicar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row vaga-fulltime">
+
+              <div class= "column medium-12 small-12 ">
+                <div class = "box">
+                  <div class="row">
+                    <div class="large-2 medium-2 small-12 columns">
+                      <a class="vaga-image" data-turbolinks="false" href="/carreiras/aplicar/176"><img src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/176/original/GEO_Capital_Logo.jpeg?1573069609" alt="Geo capital logo" /></a>
+                    </div>
+                    <div class="large-8 medium-8 small-12 columns">
+                      <a class="vaga-title" href="/carreiras/aplicar/176">GEO Capital - Analista de Operações</a>
+                      <p class="vaga-short-description">Fundada em 2013, a GEO Capital é uma gestora de recursos independente, focada exclusivamente em gerir investimentos em ações de empresas listadas fora do Brasil. Buscamos um analista de operações que possa trabalhar dentro das rotinas e processos da área, mas que também consiga interagir com o time de Investimentos e o time de Relações com Investidores.</p>
+                    </div>
+                    <div class="large-2 medium-2 small-12 columns">
+                      <h5 class="vaga-deadline">Deadline: 31/12/2019</h5>
+                      <a class="button" data-turbolinks="false" href="/carreiras/aplicar/176">Aplicar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row vaga-summer">
+
+              <div class= "column medium-12 small-12 ">
+                <div class = "box">
+                  <div class="row">
+                    <div class="large-2 medium-2 small-12 columns">
+                      <a class="vaga-image" data-turbolinks="false" href="/carreiras/aplicar/177"><img src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/177/original/GLOBO.png?1574688742" alt="Globo" /></a>
+                    </div>
+                    <div class="large-8 medium-8 small-12 columns">
+                      <a class="vaga-title" href="/carreiras/aplicar/177">Globo Summer Job 2020 - Entretenimento</a>
+                      <p class="vaga-short-description">O Programa de Summer Job da Globo se juntou à BRASA para buscar pessoas para uma experiência prática em um ambiente em plena transformação.
+                        Se você está estudando em uma universidade no exterior, é brasileir@ e quer conhecer de perto nosso movimento em direção ao mercado mediatech, se liga nessa oportunidade!</p>
+                    </div>
+                    <div class="large-2 medium-2 small-12 columns">
+                      <h5 class="vaga-deadline">Deadline: 15/01/2020</h5>
+                      <a class="button" data-turbolinks="false" href="/carreiras/aplicar/177">Aplicar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row vaga-fulltime">
+
+              <div class= "column medium-12 small-12 ">
+                <div class = "box">
+                  <div class="row">
+                    <div class="large-2 medium-2 small-12 columns">
+                      <a class="vaga-image" data-turbolinks="false" href="/carreiras/aplicar/178"><img src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/178/original/itau-logo.png?1576043008" alt="Itau logo" /></a>
+                    </div>
+                    <div class="large-8 medium-8 small-12 columns">
+                      <a class="vaga-title" href="/carreiras/aplicar/178">Analista Renda Variável Itaú</a>
+                      <p class="vaga-short-description">Kinea Investimentos is an independent, innovative alternative asset management firm, which is a subsidiary of the Itaú Group. Kinea is led by a team of veterans of the financial sector with profound experience and a long track record in the Brazilian financial markets. The firm seeks superior return for its investors, makes its investment decisions based upon rigorous analysis and risk management processes, and is always guided by strong work ethics, and independence. Currently we work with four classes of funds: Hedge Funds, Real Estate Funds Infrastructure funds and Private Equity Funds.
+                        The position is focused on the long &amp; short US equity division. The analyst will support the portfolio</p>
+                    </div>
+                    <div class="large-2 medium-2 small-12 columns">
+                      <h5 class="vaga-deadline">Deadline: 11/02/2020</h5>
+                      <a class="button" data-turbolinks="false" href="/carreiras/aplicar/178">Aplicar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row vaga-summer">
+
+              <div class= "column medium-12 small-12 ">
+                <div class = "box">
+                  <div class="row">
+                    <div class="large-2 medium-2 small-12 columns">
+                      <a class="vaga-image" data-turbolinks="false" href="/carreiras/aplicar/139"><img src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/139/original/BTG_Pactual.jpg?1570677031" alt="Btg pactual" /></a>
+                    </div>
+                    <div class="large-8 medium-8 small-12 columns">
+                      <a class="vaga-title" href="/carreiras/aplicar/139">BTG Undergraduate Summer Program 2020</a>
+                      <p class="vaga-short-description">The enrollment period for our Undergraduate Summer Program is now open. The Program is designed to give students a unique hands-on experience through learning and working side by side with top financial market professionals.</p>
+                    </div>
+                    <div class="large-2 medium-2 small-12 columns">
+                      <h5 class="vaga-deadline">Deadline: 29/12/2019</h5>
+                      <a class="button" data-turbolinks="false" href="/carreiras/aplicar/139">Aplicar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row vaga-fulltime">
+
+              <div class= "column medium-12 small-12 ">
+                <div class = "box">
+                  <div class="row">
+                    <div class="large-2 medium-2 small-12 columns">
+                      <a class="vaga-image" data-turbolinks="false" href="/carreiras/aplicar/143"><img src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/143/original/VINCI_logo.jpeg?1573002244" alt="Vinci logo" /></a>
+                    </div>
+                    <div class="large-8 medium-8 small-12 columns">
+                      <a class="vaga-title" href="/carreiras/aplicar/143">VINCI Energies - Responsável de Negócios</a>
+                      <p class="vaga-short-description">Mais inteligente, mais móvel, mais conectado e mais sustentável: O mundo evolui
+                        todos os dias. A VINCI Energies caminha lado a lado realizando inúmeros projetos
+                        para a transição energética e evolução digital.
+                        Venha fazer parte do nosso Grupo!</p>
+                    </div>
+                    <div class="large-2 medium-2 small-12 columns">
+                      <h5 class="vaga-deadline">Deadline: 20/01/2020</h5>
+                      <a class="button" data-turbolinks="false" href="/carreiras/aplicar/143">Aplicar</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br/>
+        </article>
+      </section>
+
+      < id="previous-jobs">
+        <article>
+          <h3>Empresas que já estiveram aqui</h3>
+          <br/><br/>
+          <div class="row previous-jobs" style="max-width: none">
+            <div class="row" id="centralizing_past_companies">
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/008/original/UN.png?1457715176" alt="Un" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/004/original/logo_color_vert.png?1449116982" alt="Logo color vert" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/011/original/vetorbrasil_h_top.png?1459207588" alt="Vetorbrasil h top" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/012/original/HL_Logo.jpg?1459890632" alt="Hl logo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="centralizing_past_companies">
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/010/original/TFG2.png?1458168044" alt="Tfg2" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/016/original/btg-pactual.png?1477072039" alt="Btg pactual" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/021/original/84b3c49e9163bf2b368ff89e3ac8d4f3_400x400.jpeg?1487011281" alt="84b3c49e9163bf2b368ff89e3ac8d4f3 400x400" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/036/original/B3_logo-Principal_retina.png?1509392279" alt="B3 logo principal retina" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="centralizing_past_companies">
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/026/original/images.png?1490136128" alt="Images" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/050/original/size_960_16_9_alpargatas-logotipo13.jpg?1535477964" alt="Size 960 16 9 alpargatas logotipo13" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/028/original/576197cb4961f.png?1490206543" alt="576197cb4961f" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/033/original/RB_Standard_Logo-310x200_2_.jpg?1502813520" alt="Rb standard logo 310x200 2 " />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="centralizing_past_companies">
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/140/original/itau-logo.png?1571779913" alt="Itau logo" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/035/original/brasilplural.png?1508893182" alt="Brasilplural" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/038/original/msquare.png?1509481877" alt="Msquare" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/037/original/Br_Marinas_01.jpg?1509748438" alt="Br marinas 01" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="centralizing_past_companies">
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/040/original/2000px-J_P_Morgan_Logo_2008_1.svg.png?1516825548" alt="2000px j p morgan logo 2008 1.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/049/original/chicagocouncil.png?1534902221" alt="Chicagocouncil" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/055/original/2000px-Itau.svg.png?1538585380" alt="2000px itau.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/103/original/Bradesco-novo-logo1.jpg?1554691412" alt="Bradesco novo logo1" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="centralizing_past_companies">
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/064/original/VTEX_Logo.svg.png?1569682421" alt="Vtex logo.svg" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/062/original/loggi-1533568718-logo-loggi-v2png.png?1544070822" alt="Loggi 1533568718 logo loggi v2png" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/137/original/Ambev.png?1570414917" alt="Ambev" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/067/original/endeavorlogo.png?1547137340" alt="Endeavorlogo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="centralizing_past_companies">
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/069/original/Aramis.png?1548171578" alt="Aramis" />
+                  </div>
+                </div>
+              </div>
+              <div class="column large-3 medium-3 small-12 end">
+                <div class="row">
+                  <div class="columns large-12">
+                    <img class="vaga-anterior-image" src="https://s3.amazonaws.com/brasamaster/vagas/logos/000/000/068/original/Cuidaslogo.png?1547751868" alt="Cuidaslogo" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+
+
+
+
+      <section id="contato">
+        <div class="row">
+          <h3 class="column small-12 contato">QUER ANUNCIAR AS VAGAS DA SUA EMPRESA?</h3>
+          <h2 class="column small-12 contato_item1">ENTRE EM CONTATO CONOSCO</h2>
+          <a href="mailto:carreiras@gobrasa.org?subject=Contato Site Carreiras"><h3 class="column small-12 contato_item2">CONTATO</h3></a>
+        </div>
+      </section>
+
+      <!-- Facebook Page Box Javascript SDK -->
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=1557053341228463";
+          fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <!-- End of Javascript SDK -->
+
+
+      <footer id="brasa-footer-home">
+
+        <div class="row text-center">
+          <a href="https://www.facebook.com/gobrasa" target="_blank"><img src="/app/assets/images/socialNetworks/facebook.png" alt="Facebook" /></a>
+          <a href="https://instagram.com/gobrasa/" target="_blank"><img src="/app/assets/images/socialNetworks/instagram.png" alt="Instagram" /></a>
+          <a href="https://www.linkedin.com/company/9187393" target="_blank"><img src="/app/assets/images/socialNetworks/linkedin.png" alt="Linkedin" /></a>
+          <a href="https://www.youtube.com/channel/UC7L4clHfA2mjiTe-XuNAe_w" target="_blank"><img src="/app/assets/images/socialNetworks/youtube.png" alt="Youtube" /></a>
+        </div>
+
+        <!--<br /><br />
+
+        <div class="columns large-4">
+          <h3 style="text-align: center; color: white;">Junte-se a BRASA</h3><br /><br />
+          <center>
+           <a href="malito:brasa@gobrasa.org"></a>
+          <br /><br /><br />
+          <h4>Via <i>E-mail</i></h4>
+          </center>
+          <br />
+          <hr />
+
+        </div>
+
+            <div class="columns large-4">
+              <h3 style="text-align: center; color: white;">Siga-nos por aí</h3><br /><br />
+              <center>
+                <div class="fb-page" align="center" data-href="https://www.facebook.com/gobrasa" data-width="300" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/gobrasa"><a href="https://www.facebook.com/gobrasa">BRASA - Brazilian Student Association</a></blockquote></div></div>
+              </center>
+              <br />
+              <div id="footeralign" class="large-12 columns"></div>
+              <center>
+                <a href="https://instagram.com/gobrasa/"></a>
+                <a href="https://www.linkedin.com/company/brasa"></a>
+                <a href="https://www.youtube.com/channel/UC7L4clHfA2mjiTe-XuNAe_w"></a>
+              </center>
+              <br /><hr>
+            </div>
+
+          <div class="columns large-4">
+              <h3 style="text-align: center; color: white;">Faça uma doação</h3><br /><br />
+              <center>
+
+              <a href="https://www.paypal.com/us/cgi-bin/webscr?cmd=_flow&SESSION=Wm4FHCJlD9V9JmyXdZAIRcQMXy9m_6WtCjj7eTzaoNDyPAnoXy8YYe-0uJG&dispatch=5885d80a13c0db1f8e263663d3faee8d5c97cbf3d75cb63effe5661cdf3adb6d">
+               </a>
+              <br /><br /><br />
+              <h4><i>Via PayPal</i></h4>
+              </center>
+
+              <br />
+              <hr>
+
+          </div>-->
+
+        <!-- Hack pra essa parte ocupar a página inteira -->
+        <header id="copyright">
+          <center>
+            <small>Copyright &copy; 2016 - Brazilian Student Association</small>
+          </center>
+        </header>
+
+      </footer>
+
+    </section>
+
+    <a class="exit-off-canvas"></a>
+
+  </div>
+</div>
+
+<!-- Analytics -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-125967689-4', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<script src="/app/assets/application-77a6e2519db2036c34408b3a1f7c17daf3c10594aef02634060c97eeeb147965.js" data-turbolinks-track="true"></script>
+
 </body>
 </html>
