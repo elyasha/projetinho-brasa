@@ -424,7 +424,7 @@ p {
 /* line 80, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
 section#main-carreiras {
     max-height: 80vh;
-    background: url("https://d1ep31o42b6tif.cloudfront.net/carreiras/carreiras_back.jpg");
+    background: url("https://d1ep31o42b6tif.cloudfront.net/general/Board_login_cropped.png");
     background-color: #F7F7F7;
     /*background-color: rgba(3, 138, 209, 0.52);*/
     background-size: cover;
