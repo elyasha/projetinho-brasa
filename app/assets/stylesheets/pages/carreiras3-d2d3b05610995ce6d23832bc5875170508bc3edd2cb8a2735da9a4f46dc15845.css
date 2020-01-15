@@ -610,6 +610,7 @@ section#jobs-list article .button {
     background-color: #7AB242;
     color: white;
     border-radius: 6px;
+    width: 70%;
 
 }
 /* line 234, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
@@ -769,6 +770,15 @@ section#jobs-list .row .columns a.vaga-title {
 /* line 370, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
 section#jobs-list .row .columns a:hover.vaga-title {
     color: #E8782D;
+}
+
+section#jobs-list .vaga-summer {
+    display: inline-block;
+}
+
+
+section#jobs-list .vaga-fulltime {
+    display: inline-block;
 }
 /* line 373, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
 section#jobs-list .row .columns p.vaga-title {
