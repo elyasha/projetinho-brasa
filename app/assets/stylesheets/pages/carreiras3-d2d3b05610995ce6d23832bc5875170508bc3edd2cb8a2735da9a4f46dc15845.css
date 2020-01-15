@@ -543,7 +543,7 @@ section#main-carreiras span.product-font {
 section#jobs-list {
     width: 100%;
     height: 100%;
-    padding-top: 1rem;
+    padding-top: 3rem;
     background-color: #F7F7F7;
 }
 /* line 184, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
@@ -602,7 +602,7 @@ section#jobs-list article div.box {
     -moz-box-shadow: 3px 10px 30px 5px rgba(153, 153, 153, 0.49);
     box-shadow: 3px 10px 30px 5px rgba(153, 153, 153, 0.49);
     height: 100%;
-    padding: 20px 0px 10px 0;
+    padding: 5px 0px 5px 0;
     margin-bottom: 50px;
 }
 /* line 229, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
@@ -610,6 +610,7 @@ section#jobs-list article .button {
     background-color: #7AB242;
     color: white;
     border-radius: 6px;
+
 }
 /* line 234, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
 section#jobs-list article p.vagas_alert {
