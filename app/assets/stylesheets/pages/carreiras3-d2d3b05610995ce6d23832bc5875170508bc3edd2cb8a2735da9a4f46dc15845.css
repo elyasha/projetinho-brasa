@@ -1523,7 +1523,7 @@ a.edit-button:hover {
 @media screen and (min-width: 55em) {
     /* line 1074, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
     section#main-carreiras {
-        padding-bottom: 12%;
+        padding-bottom: 0%;
     }
     /* line 1077, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
     section#main-carreiras header .top-section-logo {
@@ -1537,11 +1537,11 @@ a.edit-button:hover {
     /* line 1084, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
     section#main-carreiras header .top-section-logo span.brasa-font {
         font-size: 7rem;
-        top: -5rem;
+        bottom: -10rem;
     }
     /* line 1088, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
     section#main-carreiras header .top-section-logo span.carreiras-font {
-        top: -12.6rem;
+        bottom: -12.6rem;
         font-size: 6rem;
         display: block;
     }
