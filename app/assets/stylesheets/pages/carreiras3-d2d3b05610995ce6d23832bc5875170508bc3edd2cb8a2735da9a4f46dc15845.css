@@ -743,13 +743,12 @@ section#jobs-list .row .closed:after {
 /* line 347, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
 section#jobs-list .row .columns h5.vaga-deadline {
     font-family: "Lato";
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     font-width: 400;
     margin-bottom: 2rem;
-    margin-top: 0.5rem;
-    font-style: none;
-    color: #615357;
+    margin-top: 0rem;
+    color: #000;
 }
 /* line 357, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
 section#jobs-list .row .columns p.vaga-short-description {
@@ -1310,6 +1309,11 @@ section#form-carreiras .form-aplicar {
     margin: 1rem;
     padding-top: 2rem;
     justify-content: center;
+}
+
+.checkbox-div{
+    border-radius: 50%;
+
 }
 
 /* line 850, /Users/luccabazzo/Documents/brasa/app/assets/stylesheets/pages/carreiras3.scss.erb */
