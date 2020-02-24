@@ -1,5 +1,5 @@
 # Projetinho BRASA 
-![alt text](PROJECT_IMAGES/projeto2-1.png "Projetinho brasa")
+![alt text](PROJECT_IMAGES/projeto2-1.PNG "Projetinho brasa")
 
 This repo is used for my little project for BRASA. It is a basic ruby on rails app that show the Career page.
 
